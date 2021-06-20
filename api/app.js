@@ -1,5 +1,5 @@
-const Joi = require("joi"); // class (uppercase)
-const express = require('express'); // object
+const Joi = require("joi");
+const express = require('express');
 const cors = require('cors');
 const app = express();
 
@@ -9,13 +9,11 @@ app.use(express.json());
 let rssiVals = [0, 0, 0, 0];
 
 app.get('/', function (req, res) {
-  res.send('Choose endpoint /loc/0, /loc/1, loc/2, or /loc/3 for readings.');
+  res.send('Choose endpoint /locs, /loc/0, /loc/1, loc/2, or /loc/3 for readings.');
 });
 
 app.get('/loc/:id', function (req, res) {
   res.send(rssiVals[parseInt(req.params.id)].toString());
-  // res.send(rssiVals[parseInt(req.params.id)]);
-  // res.send('loc [' + req.params.id + '] is ' + rssiVals[parseInt(req.params.id)]);
 });
 
 app.get('/locs', function (req, res) {
