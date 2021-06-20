@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>Cat Tracker</h1>
+<p id = "loading-text">...RSSI Readings Loading...</p>
+
+<p id="loc-1-reading"></p>
+<p id="loc-2-reading"></p>
+
+<script>
+    var loc1 = false;
+    var loc2 = false;
+
+    console.log("fetching");
+    fetch("http://192.168.1.19/")
+    .then(response => response.json())
+    .then(data => {
+        console.log(data);
+        document.getElementById("loc-1-reading").innerText = data;
+        loc1 = true;
+        if (loc1 && loc2) {
+            document.getElementById("loading-text").innerText = "Done Loading";
+        }
+    });
+    
+    fetch("http://192.168.1.13/")
+    .then(response => response.json())
+    .then(data => {
+        console.log(data);
+        document.getElementById("loc-2-reading").innerText = data;
+        loc2 = true;
+        if (loc1 && loc2) {
+            document.getElementById("loading-text").innerText = "Done Loading";
+        }
+    });
+</script>
+
+</body>
+</html>

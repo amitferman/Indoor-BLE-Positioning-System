@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>BLE-Network-API Logger</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <h1 id = "title" class = "mono-font">BLE Network API Logger</h1>
+    <div id = "log-div" class = "mono-font">
+        <table id = "data-table">
+            <tr>
+                <th>Time</th>
+                <th>Loc 0</th>
+                <th>Loc 1</th>
+                <th>Loc 2</th>
+                <th>Loc 3</th>
+            </tr>
+        </table>
+    </div>
+    <div id = "controls">
+        <div class = "settings-container">
+            <button id = "new-region-btn" class = "btn new-region mono-font" >New Region</button>
+            <textarea wrap="off" id= "new-region-text" class = "new-region mono-font"></textarea>
+        </div>
+        <div class = "settings-container">
+            <button id = "collect-five" class = "btn new-region mono-font" >Collect 5</button>
+            <button id = "collect-fifteen" class = "btn new-region mono-font" >Collect 15</button>
+            <button id = "collect-thirty" class = "btn new-region mono-font" >Collect 30</button>
+            <button id = "collect-fifty" class = "btn new-region mono-font" >Collect 50</button>
+        </div>
+        <div id = "queue-div" class = "settings-container" style = "width: 34%">
+            <h3 id = "queue-header">Queue:</h3>
+            <p id = "queue-val">0</p>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>

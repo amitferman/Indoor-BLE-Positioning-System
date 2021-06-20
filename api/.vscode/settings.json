@@ -1,0 +1,4 @@
+{
+    "appService.defaultWebAppToDeploy": "/subscriptions/4b5454de-6890-4627-9352-336fc9073dba/resourceGroups/appsvc_linux_centralus/providers/Microsoft.Web/sites/ble-network-api",
+    "appService.deploySubpath": "."
+}
