@@ -1,7 +1,7 @@
 var express = require('express');
 var router = express.Router();
 
-const data = "{\r\n  \"data\": [\r\n    {\r\n      \"BLE_0\": 0,\r\n      \"BLE_1\": 0,\r\n      \"BLE_2\": 0,\r\n      \"BLE_3\": 0,\r\n      \"Column16\": \"example_value\"\r\n    }\r\n  ]\r\n}";
+const data = "{  \"data\": [    {      \"BLE_0\": 0,      \"BLE_1\": 0,      \"BLE_2\": 0,      \"BLE_3\": 0,      \"Column16\": \"example_value\"    }  ]}";
 
 fetch('http://c4585a85-96a8-4645-8b50-d557a27538df.centralus.azurecontainer.io/score', {
   method: 'POST', // or 'PUT'
