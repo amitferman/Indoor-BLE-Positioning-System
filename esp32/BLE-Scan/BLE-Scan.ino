@@ -13,7 +13,7 @@
 const char* TILE_MAC = "d0:8d:47:4f:49:76"; // mac address of ble beacon (Tile)
 const int scanTime = 10; // BLE Scan Time (seconds)
 int cursecond;
-int rssi;
+int rssi; // signal strength
 int numDevices; // devices found in scan
 int rssiReadings[1000]; // RSSI Readings, set length to 1000 to reserve enough memory
 // wifi config
