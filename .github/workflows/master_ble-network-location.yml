@@ -35,4 +35,4 @@ jobs:
         app-name: 'ble-network-location'
         slot-name: 'production'
         publish-profile: ${{ secrets.AzureAppService_PublishProfile_cd5eba7459ff4a2d8afa7d66de38fad0 }}
-        package: ./build
+        package: ./webpage/build
