@@ -23,7 +23,8 @@ fetch('http://c4585a85-96a8-4645-8b50-d557a27538df.centralus.azurecontainer.io/s
   },
   body: JSON.stringify(data),
 })
-.then(response => JSON.parse(response.json()))
+.then(response => response.json())
+
 .then(mlRes => {
   /* GET home page. */
   router.get('/', function(req, res, next) {
