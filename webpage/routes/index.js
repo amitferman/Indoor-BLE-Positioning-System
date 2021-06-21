@@ -27,7 +27,7 @@ fetch('http://c4585a85-96a8-4645-8b50-d557a27538df.centralus.azurecontainer.io/s
 .then(mlRes => {
   /* GET home page. */
   router.get('/', function(req, res, next) {
-    res.render('main', { loc: String(mlRes.result[0])});
+    res.render('main', { loc: String(mlRes.result)});
     
   });
 
