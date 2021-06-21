@@ -17,8 +17,6 @@ fetch("https://ble-network-api.azurewebsites.net/locs")
       }
     ]
   };
-  
-  
   fetch('http://c4585a85-96a8-4645-8b50-d557a27538df.centralus.azurecontainer.io/score', {
     method: 'POST', // or 'PUT'
     headers: {
@@ -32,9 +30,8 @@ fetch("https://ble-network-api.azurewebsites.net/locs")
     /* GET home page. */
     router.get('/', function(req, res, next) {
       res.render('main', { loc: mlResObj.result[0]});
-      
     });
-  
+    module.exports = router;
    });
 });
 
@@ -42,4 +39,4 @@ fetch("https://ble-network-api.azurewebsites.net/locs")
 
 
 
-module.exports = router;
+
