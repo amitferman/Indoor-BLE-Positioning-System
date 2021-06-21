@@ -2,8 +2,8 @@ var express = require('express');
 var router = express.Router();
 var fetch = require('node-fetch');
 
-const loc_stream = await fetch("https://ble-network-api.azurewebsites.net/locs")
-const locs = await loc_stream.json();
+//const loc_stream = await fetch("https://ble-network-api.azurewebsites.net/locs")
+//const locs = await loc_stream.json();
 
 const data = 
 {
@@ -31,8 +31,8 @@ fetch('http://c4585a85-96a8-4645-8b50-d557a27538df.centralus.azurecontainer.io/s
   const mlResObj = JSON.parse(mlRes);
   /* GET home page. */
   router.get('/', function(req, res, next) {
-    // res.render('main', { loc: mlResObj.result[0]});
-    res.render('main', { loc: locs});
+    res.render('main', { loc: mlResObj.result[0]});
+    // res.render('main', { loc: locs});
     
   });
 
