@@ -2,7 +2,7 @@ var express = require('express');
 var router = express.Router();
 var fetch = require('node-fetch');
 
-const locs = await fetch("https://ble-network-api.azurewebsites.net/locs")
+const loc = await fetch("https://ble-network-api.azurewebsites.net/locs")
 .then(res => res.json());
 
 const data = 
