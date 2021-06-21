@@ -3,11 +3,13 @@ var router = express.Router();
 var fetch = require('node-fetch');
 
 fetch("https://ble-network-api.azurewebsites.net/locs")
-.then(response => response.json())
+.then(response => response.text())
 .then(locs => {
+  locs = JSON.parse(locs);
   const data = 
   {
-    "data": [
+    "data": 
+    [
       {
         "BLE_0": locs[0],
         "BLE_1": locs[1],
@@ -17,25 +19,22 @@ fetch("https://ble-network-api.azurewebsites.net/locs")
       }
     ]
   };
-
-
-fetch('http://c4585a85-96a8-4645-8b50-d557a27538df.centralus.azurecontainer.io/score', {
-  method: 'POST', // or 'PUT'
-  headers: {
-    'Content-Type': 'application/json',
-  },
-  body: JSON.stringify(data),
-})
-.then(response => response.json())
-.then(mlRes => {
-  const mlResObj = JSON.parse(mlRes);
-  /* GET home page. */
-  router.get('/', function(req, res, next) {
-    res.render('main', { loc: mlResObj.result[0]});
-    // res.render('main', { loc: locs});
-    
+  fetch('http://c4585a85-96a8-4645-8b50-d557a27538df.centralus.azurecontainer.io/score', {
+    method: 'POST', // or 'PUT'
+    headers: {
+      'Content-Type': 'application/json',
+    },
+    body: JSON.stringify(data),
+  })
+  .then(response => response.json())
+  .then(mlRes => {
+    const mlResObj = JSON.parse(mlRes);
+    /* GET home page. */
+    router.get('/', function(req, res, next) {
+      res.render('main', { loc: mlResObj.result[0]});
+      // res.render('main', { loc: locs});
+    });
   });
- });
 });
 
 
