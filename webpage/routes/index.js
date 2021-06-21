@@ -2,21 +2,21 @@ var express = require('express');
 var router = express.Router();
 var fetch = require('node-fetch');
 
-//const loc_stream = await fetch("https://ble-network-api.azurewebsites.net/locs")
-//const locs = await loc_stream.json();
-
-const data = 
-{
-  "data": [
-    {
-      "BLE_0": 0,
-      "BLE_1": 0,
-      "BLE_2": 0,
-      "BLE_3": 0,
-      "Column16": "example_value"
-    }
-  ]
-};
+fetch("https://ble-network-api.azurewebsites.net/locs")
+.then(response => response.json())
+.then(locs => {
+  const data = 
+  {
+    "data": [
+      {
+        "BLE_0": locs[0],
+        "BLE_1": locs[1],
+        "BLE_2": locs[2],
+        "BLE_3": locs[3],
+        "Column16": "example_value"
+      }
+    ]
+  };
 
 
 fetch('http://c4585a85-96a8-4645-8b50-d557a27538df.centralus.azurecontainer.io/score', {
@@ -35,8 +35,11 @@ fetch('http://c4585a85-96a8-4645-8b50-d557a27538df.centralus.azurecontainer.io/s
     // res.render('main', { loc: locs});
     
   });
-
  });
+});
+
+
+
 
 
 
