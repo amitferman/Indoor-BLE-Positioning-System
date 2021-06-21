@@ -2,6 +2,8 @@ var express = require('express');
 var router = express.Router();
 var fetch = require('node-fetch');
 
+/* GET home page. */
+router.get('/', function(req, res, next) {
 fetch("https://ble-network-api.azurewebsites.net/locs")
 .then(response => response.text())
 .then(locs => {
@@ -29,15 +31,10 @@ fetch("https://ble-network-api.azurewebsites.net/locs")
   .then(response => response.json())
   .then(mlRes => {
     const mlResObj = JSON.parse(mlRes);
-    /* GET home page. */
-    router.get('/', function(req, res, next) {
       res.render('main', { loc: mlResObj.result[0]});
-      // res.render('main', { loc: locs});
     });
   });
 });
-
-
 
 
 
