@@ -72,7 +72,7 @@ app.get('/predicted-location', function(req, res, next) {
   .then(response => response.json())
   .then(mlRes => {
     const mlResObj = JSON.parse(mlRes);
-    res.send(mlResObj.result[0]);
+    res.send(predictedLocationNames[mlResObj.result[0]]);
   });
 });
 
