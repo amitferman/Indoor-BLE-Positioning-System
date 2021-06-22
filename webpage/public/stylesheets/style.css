@@ -13,9 +13,9 @@ body {
 
 #devices-container {
   margin: auto;
-  height: 550px;
+  height: 600px;
   width: 500px;
-  border: 1px solid gainsboro;
+  
 }
 
 #container {
@@ -82,7 +82,7 @@ body {
 
 .loading-skeleton {
   width: 100px;
-  height: 30px;
+  height: 15px;
   margin-left: 10px;
   animation: progress 1.2s ease-in-out infinite;
   background-color: #eee;
@@ -91,9 +91,6 @@ body {
   background-repeat: no-repeat;
 }
 
-#devices-header {
-
-}
 
 @keyframes progress {
   0% {
