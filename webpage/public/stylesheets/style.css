@@ -1,52 +1,48 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300;500&family=PT+Sans+Caption&display=swap');
+
 body { 
-  font-family: 'Poppins', sans-serif;
-  font-weight: 300px ;
-  margin:  0px;
+  padding: 50px;
+  font-family: 'IBM Plex Mono', monospace;
+  font-weight:300;
 } 
 
-html, body {
-  width: 100%;
-  height: 100%;
+.title{
+  text-align: center;
+  font-weight:300;
 }
 
-.bg-img {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  background: url('http://unsplash.it/1200x800') center center no-repeat;
-  background-size: cover;
-}
-
-.bg-img:before {
-  content: '';
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background-image: linear-gradient(to bottom right,#002f4b,rgb(66, 114, 153));
-  opacity: .6; 
-}
-
-#ble-logo {
-  height: 70px;
-  width: 70px;
-  position: absolute;
+#devices-container {
   margin: auto;
-  top: 30px;
-  left: 265px;
+  height: 600px;
+  width: 420px;
+  
+}
+
+#container {
+  display: flex;
+  flex-direction: row;
+  
+  height: 400px;
+  width: 400px;
+  margin: auto;
+}
+
+#img-div {
+  height: 100%;
+  width: 50px;
+  padding:0px 5px 5px 5px;
+  margin: 0px;
 
 }
 
 #content-div {
-  height: 600px;
-  width: 600px; 
-  background-color: white;
-  opacity: 0.5;
-  position: absolute;
-  top: 150px;
-  left: 440px;
+  height: 100%;
+  width: 338px;
+  border: 1px solid gray;
+  border-radius: 5px;
+  position: relative;
+  overflow: hidden;
+  transition-duration: 1s;
 }
 
 #content-title {
@@ -58,6 +54,19 @@ html, body {
   color:gray;
 }
 
+.toggle-btn {
+  position: absolute;
+  right:2px;
+  top:2px;
+  width: 50px;
+  height: 50px;
+  font-size: 8pt;
+  background-color: transparent;
+  border: none;
+  transition-duration: 1s;
+  cursor: pointer;
+}
+
 .content-text {
   margin: 10px;
 }
@@ -66,9 +75,14 @@ html, body {
   margin: 5px;
 }
 
-.title {
-  font-size: 20pt;
+#devices-container-bar {
+  width: 420px;
 
+}
+
+#tile {
+  width: 52px;
+  height: 52px;
 }
 
 .loading-skeleton {
@@ -92,5 +106,7 @@ html, body {
       background-position: calc(100px + 100%) 0;
   }
 }
+
+
 
 
