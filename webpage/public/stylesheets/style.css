@@ -1,8 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300&family=PT+Sans+Caption&display=swap');
+
 body {
   padding: 50px;
-  color: red;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  font-family: 'IBM Plex Mono', monospace;
 }
+
+
+
 
 a {
   color: #00B7FF;
