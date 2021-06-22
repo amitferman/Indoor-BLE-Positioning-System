@@ -1,5 +1,3 @@
-console.log("works");
-
 const rssi0text = document.getElementById("rssi0");
 const rssi1text = document.getElementById("rssi1");
 const rssi2text = document.getElementById("rssi2");
@@ -25,22 +23,26 @@ toggle.addEventListener('click', () => {
 });
 
 setTimeout( ()=> {
-    skelLoc.style.display = "none";
+    
     fetch("https://ble-network-api.azurewebsites.net/predicted-location")
     .then(res => res.text())
-    .then(loc => loctext.innerText = loc);
+    .then(loc => {
+        skelLoc.style.display = "none";
+        loctext.innerText = loc;
+    });
 }, 
 1000);
 
 
 setTimeout( ()=> {
-    skel0.style.display = "none";
-    skel1.style.display = "none";
-    skel2.style.display = "none";
-    skel3.style.display = "none";
+    
     fetch("https://ble-network-api.azurewebsites.net/locs")
     .then(res => res.json())
     .then(locs => {
+        skel0.style.display = "none";
+        skel1.style.display = "none";
+        skel2.style.display = "none";
+        skel3.style.display = "none";
         rssi0text.innerText = locs[0];
         rssi1text.innerText = locs[1];
         rssi2text.innerText = locs[2];
