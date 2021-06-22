@@ -37,4 +37,32 @@ app.post('/loc/:id', function (req, res) {
   });
 });
 
+app.get('/predicted-location', function(req, res, next) {
+  const data = 
+  {
+    "data": 
+    [
+      {
+        "BLE_0": rssiVals[0],
+        "BLE_1": rssiVals[1],
+        "BLE_2": rssiVals[2],
+        "BLE_3": rssiVals[3],
+        "Column16": "example_value"
+      }
+    ]
+  };
+  fetch('http://c4585a85-96a8-4645-8b50-d557a27538df.centralus.azurecontainer.io/score', {
+    method: 'POST', // or 'PUT'
+    headers: {
+      'Content-Type': 'application/json',
+    },
+    body: JSON.stringify(data),
+  })
+  .then(response => response.json())
+  .then(mlRes => {
+    const mlResObj = JSON.parse(mlRes);
+    res.send(mlResObj.result[0]);
+  });
+});
+
 module.exports = app;
