@@ -15,6 +15,7 @@ body {
   margin: auto;
   height: 550px;
   width: 500px;
+  border: 1px solid gainsboro;
 }
 
 #container {
@@ -79,5 +80,9 @@ body {
   height: 52px;
 }
 
+
+#devices-header {
+
+}
 
 
