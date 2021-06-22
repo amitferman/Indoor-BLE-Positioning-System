@@ -35,10 +35,10 @@ html, body {
   height: 600px;
   width: 600px; 
   background-color: white;
-  opacity: 0.4;
+  opacity: 0.5;
   position: absolute;
   top: 150px;
-  left: 400px;
+  left: 440px;
 }
 
 #content-title {
@@ -58,15 +58,9 @@ html, body {
   margin: 5px;
 }
 
-#devices-container-bar {
-  width: 420px;
-  height: 25px;
-  background-color: #f5f5f5;
-}
-
-#tile {
-  width: 52px;
-  height: 52px;
+.title {
+  font-size: 20pt;
+  
 }
 
 .loading-skeleton {
