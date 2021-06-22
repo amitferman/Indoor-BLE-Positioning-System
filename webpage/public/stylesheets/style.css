@@ -36,7 +36,7 @@ html, body {
   width: 600px; 
   background-color: white;
   opacity: 0.4;
-  position: relative;
+  position: absolute;
 }
 
 #content-title {
