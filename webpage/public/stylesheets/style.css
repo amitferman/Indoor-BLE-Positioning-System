@@ -10,6 +10,7 @@ body {
 .title{
   text-align: center;
   font-weight:300;
+  display: inline-block;
 }
 
 #container {
@@ -26,12 +27,13 @@ body {
   width: 50px;
   padding:0px 5px 5px 5px;
   margin: 0px;
+  display: inline-block;
 
 }
 
 #content-div {
   height: 100%;
-  width: 338px;
+  width: calc(100% - 62);
   border: 1px solid gray;
   border-radius: 5px;
   position: relative;
