@@ -11,15 +11,6 @@ body {
   font-weight:300;
 }
 
-#container {
-  display: flex;
-  flex-direction: row;
-  
-  height: 400px;
-  width: 400px;
-  margin: auto;
-}
-
 #img-div {
   height: 100%;
   width: 50px;
@@ -30,7 +21,7 @@ body {
 
 #content-div {
   height: 100%;
-  width: 338px;
+  width: 400px;
   border: 1px solid gray;
   border-radius: 5px;
   position: relative;
