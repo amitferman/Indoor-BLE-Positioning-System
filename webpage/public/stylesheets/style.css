@@ -40,8 +40,8 @@ body {
   text-decoration: underline;
 }
 
-#loc-header {
-  font-weight:500;
+.content-text {
+  margin-left: 10px;
 }
 
 .content-header {
