@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300&family=PT+Sans+Caption&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300;500&family=PT+Sans+Caption&display=swap');
 
 body { 
   padding: 50px;
@@ -38,8 +38,13 @@ body {
   text-decoration: underline;
 }
 
+#loc-text {
+  color: green;
+  font-weight:500;
+}
+
 .content-header {
-  font-style: oblique;
+  margin: 5px;
 }
 
 #tile {
