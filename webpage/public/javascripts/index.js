@@ -6,12 +6,15 @@ const rssi2text = document.getElementById("rssi2");
 const rssi3text = document.getElementById("rssi3");
 const loctext = document.getElementById("loc-text");
 const toggle = document.getElementById("toggle");
+const contentDiv = document.getElementById("content-div");
 
 toggle.addEventListener('click', () => {
     if (toggle.style.transform != "rotate3d(1, 0, 0, 180deg)") {
         toggle.style.transform = "rotate3d(1, 0, 0, 180deg)";
+        contentDiv.style.height = "50px";
     } else {
         toggle.style.transform = "rotate3d(1, 0, 0, 0deg)";
+        contentDiv.style.height = "500px";
     }
     
 });
