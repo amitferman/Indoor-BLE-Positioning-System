@@ -8,10 +8,10 @@ const skel1 = document.getElementById("1-skeleton");
 const skel2 = document.getElementById("2-skeleton");
 const skel3 = document.getElementById("3-skeleton");
 const loctext = document.getElementById("loc-text");
-//const toggle = document.getElementById("toggle");
+const toggle = document.getElementById("toggle");
 const contentDiv = document.getElementById("content-div");
 
-/*toggle.addEventListener('click', () => {
+toggle.addEventListener('click', () => {
     if (toggle.style.transform != "rotate3d(1, 0, 0, 180deg)") {
         toggle.style.transform = "rotate3d(1, 0, 0, 180deg)";
         contentDiv.style.height = "50px";
@@ -20,7 +20,7 @@ const contentDiv = document.getElementById("content-div");
         contentDiv.style.height = "400px";
     }
     
-});*/
+});
 
 setTimeout( ()=> {
     fetch("https://ble-network-api.azurewebsites.net/predicted-location")
