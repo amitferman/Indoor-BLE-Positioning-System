@@ -20,6 +20,7 @@ body {
   height: 400px;
   width: 400px;
   margin: auto;
+  top: 100px;
 }
 
 #img-div {
