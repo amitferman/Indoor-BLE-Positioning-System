@@ -25,7 +25,7 @@ toggle.addEventListener('click', () => {
 });
 
 setTimeout( ()=> {
-    skelLoc.style.visibility = "hidden";
+    skelLoc.style.display = "none";
     fetch("https://ble-network-api.azurewebsites.net/predicted-location")
     .then(res => res.text())
     .then(loc => loctext.innerText = loc);
@@ -34,10 +34,10 @@ setTimeout( ()=> {
 
 
 setTimeout( ()=> {
-    skel0.style.visibility = "hidden";
-    skel1.style.visibility = "hidden";
-    skel2.style.visibility = "hidden";
-    skel3.style.visibility = "hidden";
+    skel0.style.display = "none";
+    skel1.style.display = "none";
+    skel2.style.display = "none";
+    skel3.style.display = "none";
     fetch("https://ble-network-api.azurewebsites.net/locs")
     .then(res => res.json())
     .then(locs => {
