@@ -7,9 +7,13 @@ body {
 } 
 
 .title{
+  float:none;
+  
+  color: #f2f2f2;
   text-align: center;
-  font-weight:300;
-  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
 }
 
 
