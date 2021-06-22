@@ -38,6 +38,15 @@ app.post('/loc/:id', function (req, res) {
   });
 });
 
+const predictedLocationNames = {
+  dining_room_1: "Dining Room 1",
+  dining_room_2: "Dining Room 2",
+  front_door: "Front Door",
+  living_room_1: "Living Room 1",
+  living_room_2: "Living Room 2",
+  kitchen: "Kitchen"
+}
+
 app.get('/predicted-location', function(req, res, next) {
   // define body of POST request to azure ml endpoint
   const data = 
