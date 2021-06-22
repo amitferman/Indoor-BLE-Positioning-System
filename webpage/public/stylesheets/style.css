@@ -9,5 +9,27 @@ body {
   text-align: center;
 }
 
+#container {
+  display: flexbox;
+  flex-direction: row;
+  height: 400px;
+  width: 400px;
+}
+
+#img-div {
+  height: 100%;
+  width: 30px;
+}
+
+#content-div {
+  height: 100%;
+  width: 370px;
+}
+
+#tile {
+  width: 30px;
+  height: 30px;
+}
+
 
 
