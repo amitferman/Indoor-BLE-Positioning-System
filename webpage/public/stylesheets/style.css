@@ -30,7 +30,7 @@ body {
 
 #content-div {
   height: 100%;
-  width: calc(90%-12px);
+  width: calc(90% - 12px);
   border: 1px solid gray;
   border-radius: 5px;
   position: relative;
