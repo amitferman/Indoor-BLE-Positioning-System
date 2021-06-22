@@ -7,6 +7,9 @@ const rssi3text = document.getElementById("rssi3");
 const loctext = document.getElementById("loc-text");
 const toggle = document.getElementById("toggle");
 
+toggle.addEventListener('click', () => {
+    toggle.style.transform = "rotate3d(0, 1, 0, 180deg)";
+});
 
 fetch("https://ble-network-api.azurewebsites.net/predicted-location")
 .then(res => res.text())
@@ -14,11 +17,6 @@ fetch("https://ble-network-api.azurewebsites.net/predicted-location")
 
 fetch("https://ble-network-api.azurewebsites.net/locs")
 .then(res => res.json())
-.then(l => {
-    console.log(l);
-    console.log(typeof l);
-    return l;
-})
 .then(locs => {
     rssi0text.innerText = locs[0];
     rssi1text.innerText = locs[1];
