@@ -47,6 +47,8 @@ body {
   width: 20px;
   height: 20px;
   font-size: 10pt;
+  background-color: white;
+  border: none;
 }
 
 .content-text {
