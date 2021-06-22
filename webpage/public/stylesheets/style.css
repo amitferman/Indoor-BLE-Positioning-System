@@ -14,8 +14,8 @@ body {
 #devices-container {
   margin: auto;
   height: 600px;
-  width: 500px;
-  
+  width: 420px;
+  border: 1px solid gray;
 }
 
 #container {
@@ -73,6 +73,12 @@ body {
 
 .content-header {
   margin: 5px;
+}
+
+#devices-container-bar {
+  width: 420px;
+  height: 25px;
+  background-color: #f5f5f5;
 }
 
 #tile {
