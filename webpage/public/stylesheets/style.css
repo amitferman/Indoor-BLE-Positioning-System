@@ -21,7 +21,7 @@ body {
 
 #img-div {
   height: 100%;
-  width: 30px;
+  width: 50px;
   padding:5px;
   margin: 0px;
 
@@ -29,7 +29,7 @@ body {
 
 #content-div {
   height: 100%;
-  width: 360px;
+  width: 340px;
   border: 1px solid gray;
 }
 
