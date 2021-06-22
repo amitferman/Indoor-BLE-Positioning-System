@@ -27,6 +27,7 @@ body {
   position: relative;
   overflow: hidden;
   transition-duration: 1s;
+  margin: auto;
 }
 
 #content-title {
