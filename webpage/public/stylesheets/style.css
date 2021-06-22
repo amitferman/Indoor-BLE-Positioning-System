@@ -30,6 +30,12 @@ body {
   height: 100%;
   width: 340px;
   border: 1px solid gray;
+  border-radius: 5px;
+}
+
+#content-title {
+  text-align: center;
+  font-style: underline;
 }
 
 #tile {
