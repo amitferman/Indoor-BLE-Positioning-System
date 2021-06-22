@@ -54,6 +54,7 @@ body {
   font-size: 8pt;
   background-color: white;
   border: none;
+  transition-duration: 1s;
 }
 
 .content-text {
