@@ -16,7 +16,7 @@ body {
 #container {
   display: flex;
   flex-direction: row;
-  
+  position: relative;
   height: 400px;
   width: 400px;
   margin: auto;
@@ -108,7 +108,7 @@ body {
 .navbar {
   overflow: hidden;
   background-color: #333;
-  position: absolute;
+  position: relative;
   top: 0;
   width: 100%;
 }
