@@ -18,6 +18,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname,'public'))); // exposes /public files to browser
+app.use(express.static(path.join(__dirname,'static-views')));
 
 app.use('/', indexRouter);
 app.use('/location', usersRouter);
