@@ -6,34 +6,30 @@ body {
   margin:0px;
 } 
 
-.title{
-  display: block;
-  color: #f2f2f2;
-  text-align: center;
-  margin: auto;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
-}
-
-
-#container {
-  display: flex;
-  flex-direction: row;
-  position: relative;
-  height: 400px;
-  width: 400px;
-  margin: auto;
-  top: 100px;
-}
-
-#img-div {
+html, body {
+  width: 100%;
   height: 100%;
-  width: 50px;
-  padding:0px 5px 5px 5px;
-  margin: 0px;
-
 }
+
+.bg-img {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: url('http://unsplash.it/1200x800') center center no-repeat;
+  background-size: cover;
+}
+
+.bg-img:before {
+  content: '';
+position: absolute;
+top: 0;
+right: 0;
+bottom: 0;
+left: 0;
+background-image: linear-gradient(to bottom right,#002f4b,#dc4225);
+opacity: .6; 
+}
+
 
 #content-div {
   height: 100%;
@@ -52,19 +48,6 @@ body {
 
 #toggle:hover {
   color:gray;
-}
-
-.toggle-btn {
-  position: absolute;
-  right:2px;
-  top:2px;
-  width: 50px;
-  height: 50px;
-  font-size: 8pt;
-  background-color: transparent;
-  border: none;
-  transition-duration: 1s;
-  cursor: pointer;
 }
 
 .content-text {
@@ -108,33 +91,4 @@ body {
   }
 }
 
-
-
-.navbar {
-  overflow: hidden;
-  background-color: #333;
-  position: relative;
-  top: 0;
-  width: 100%;
-}
-
-.navbar a {
-  float: left;
-  display: block;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
-}
-
-.navbar a:hover {
-  background: #f1f1f1;
-  color: black;
-}
-
-.navbar a.active {
-  background-color: #04AA6D;
-  color: white;
-}
 

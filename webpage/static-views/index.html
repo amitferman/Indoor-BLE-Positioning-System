@@ -5,19 +5,11 @@
   </head>
   
   <body>
-      <div class="navbar">
-        <a class="active">Home</a>
-        <a href="https://github.com/">Github</a>
-        <p id = "title">BLE Positioning System</p>
-      </div>
-      
-      <div id = "container">
-        <div id="img-div">
-            <img id = "tile" src="images/tile-pro-2020-no-background.jpg" alt="Tile Pro">
-        </div>
+      <div class="bg-img"></div>
+      <h1 class = "title">BLE Positioning System</h1>
         <div id="content-div">
             <p id = "content-title">Tile Pro</p>
-            <!--<button id = "toggle" class = "toggle-btn">╲╱</button>-->
+            <button id = "toggle" class = "toggle-btn">╲╱</button>
             <hr/>
             <p class = "content-header" id = "loc-header">Location:</p>
               <div id = "loc-skeleton" class = "loading-skeleton"></div>
@@ -35,7 +27,6 @@
               <div id = "3-skeleton" class = "loading-skeleton"></div>
               <p class = "content-text" id = "rssi3"></p>
         </div>
-    </div>
     <script src="javascripts/index.js"></script>
   </body>
 </html>
