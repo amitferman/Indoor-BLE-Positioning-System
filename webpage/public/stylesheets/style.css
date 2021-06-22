@@ -1,7 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300;500&family=PT+Sans+Caption&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
 body { 
-  font-family: 'Lato', sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-weight: 300px ;
   margin:  0px;
 } 
@@ -30,6 +29,14 @@ html, body {
   opacity: .6; 
 }
 
+#ble-logo {
+  height: 70px;
+  width: 70px;
+  position: absolute;
+  margin: auto;
+  top: 30px;
+
+}
 
 #content-div {
   height: 600px;
@@ -60,7 +67,7 @@ html, body {
 
 .title {
   font-size: 20pt;
-  
+
 }
 
 .loading-skeleton {
