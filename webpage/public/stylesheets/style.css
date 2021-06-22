@@ -35,7 +35,7 @@ body {
 
 #content-title {
   text-align: center;
-  font-style: underline;
+  text-decoration: underline;
 }
 
 #tile {
