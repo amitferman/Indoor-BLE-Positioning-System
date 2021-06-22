@@ -4,6 +4,7 @@ body {
   padding: 50px;
   font-family: 'IBM Plex Mono', monospace;
   font-weight:300;
+  font-size: 10pt;
 } 
 
 .title{
@@ -11,19 +12,12 @@ body {
   font-weight:300;
 }
 
-#devices-container {
-  margin: auto;
-  height: 600px;
-  width: 420px;
-  
-}
-
 #container {
   display: flex;
   flex-direction: row;
   
-  height: 400px;
-  width: 400px;
+  height: 80%;
+  width: 80%;
   margin: auto;
 }
 
