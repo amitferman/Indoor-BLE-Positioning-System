@@ -10,7 +10,7 @@ body {
 }
 
 #container {
-  display: flexbox;
+  display: flex;
   flex-direction: row;
   height: 400px;
   width: 400px;
@@ -19,7 +19,9 @@ body {
 #img-div {
   height: 100%;
   width: 30px;
-  margin: 5px;
+  padding:5px;
+  margin: 0px;
+
 }
 
 #content-div {
