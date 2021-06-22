@@ -2,6 +2,7 @@ const Joi = require("joi");
 const express = require('express');
 const cors = require('cors');
 const app = express();
+const fetch = require('node-fetch');
 
 app.use(cors());
 app.use(express.json());
@@ -38,6 +39,7 @@ app.post('/loc/:id', function (req, res) {
 });
 
 app.get('/predicted-location', function(req, res, next) {
+  // define body of POST request to azure ml endpoint
   const data = 
   {
     "data": 
