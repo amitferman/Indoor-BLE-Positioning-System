@@ -1,5 +1,3 @@
-const { text } = require("express");
-
 console.log("works");
 
 const rssi0text = document.getElementById("rssi0");
