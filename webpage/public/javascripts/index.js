@@ -8,7 +8,7 @@ const loctext = document.getElementById("loc-text");
 const toggle = document.getElementById("toggle");
 
 toggle.addEventListener('click', () => {
-    toggle.style.transform = "rotate3d(0, 1, 0, 180deg)";
+    toggle.style.transform = "rotate3d(1, 0, 0, 180deg)";
 });
 
 fetch("https://ble-network-api.azurewebsites.net/predicted-location")
