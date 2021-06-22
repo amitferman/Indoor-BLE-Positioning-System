@@ -2,8 +2,8 @@
 
 body { 
   font-family: 'Lato', sans-serif;
-  font-weight:300;
-  margin:0px;
+  font-weight: 300px ;
+  margin:  0px;
 } 
 
 html, body {
@@ -15,18 +15,27 @@ html, body {
   position: relative;
   width: 100%;
   height: 100%;
-  background-image: linear-gradient(to bottom right,#333399,#666699);
+  background: url('http://unsplash.it/1200x800') center center no-repeat;
   background-size: cover;
+}
 
+.bg-img:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: linear-gradient(to bottom right,#002f4b,#dc4225);
+  opacity: .6; 
 }
 
 
 #content-div {
   height: 600px;
-  width: 600px;
-  background-color: whitesmoke;
-  opacity: 0.5;
-  border-radius: 5px;
+  width: 600px; 
+  background-color: white;
+  opacity: 0.4;
   position: relative;
 }
 
