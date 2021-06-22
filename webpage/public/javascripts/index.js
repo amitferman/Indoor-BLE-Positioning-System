@@ -17,13 +17,12 @@ toggle.addEventListener('click', () => {
         contentDiv.style.height = "50px";
     } else {
         toggle.style.transform = "rotate3d(1, 0, 0, 0deg)";
-        contentDiv.style.height = "500px";
+        contentDiv.style.height = "400px";
     }
     
 });
 
 setTimeout( ()=> {
-    
     fetch("https://ble-network-api.azurewebsites.net/predicted-location")
     .then(res => res.text())
     .then(loc => {
