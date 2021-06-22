@@ -41,6 +41,10 @@ body {
   text-decoration: underline;
 }
 
+#toggle:hover {
+  color:gray;
+}
+
 .toggle-btn {
   position: absolute;
   right:2px;
