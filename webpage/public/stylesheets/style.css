@@ -33,6 +33,7 @@ body {
   width: 340px;
   border: 1px solid gray;
   border-radius: 5px;
+  position: relative;
 }
 
 #content-title {
