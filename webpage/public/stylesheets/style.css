@@ -20,7 +20,7 @@ body {
 }
 
 #content-div {
-  height: 100%;
+  height: 400px;
   width: 400px;
   border: 1px solid gray;
   border-radius: 5px;
