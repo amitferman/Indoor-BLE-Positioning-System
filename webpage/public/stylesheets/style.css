@@ -82,7 +82,7 @@ body {
 
 .loading-skeleton {
   width: 100px;
-  height: 15px;
+  height: 21px;
   margin: 10px;
   animation: progress 1.2s ease-in-out infinite;
   background-color: #eee;
