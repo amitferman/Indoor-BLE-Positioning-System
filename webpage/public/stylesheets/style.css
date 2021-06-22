@@ -4,7 +4,6 @@ body {
   padding: 50px;
   font-family: 'IBM Plex Mono', monospace;
   font-weight:300;
-  font-size: 10pt;
 } 
 
 .title{
@@ -16,14 +15,14 @@ body {
   display: flex;
   flex-direction: row;
   
-  height: 80%;
-  width: 80%;
+  height: 400px;
+  width: 100%;
   margin: auto;
 }
 
 #img-div {
   height: 100%;
-  width: 50px;
+  width: 10%;
   padding:0px 5px 5px 5px;
   margin: 0px;
 
@@ -31,7 +30,7 @@ body {
 
 #content-div {
   height: 100%;
-  width: 338px;
+  width: calc(90%-12px);
   border: 1px solid gray;
   border-radius: 5px;
   position: relative;
