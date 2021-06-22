@@ -16,13 +16,13 @@ body {
   flex-direction: row;
   
   height: 400px;
-  width: 100%;
+  width: 400px;
   margin: auto;
 }
 
 #img-div {
   height: 100%;
-  width: 10%;
+  width: 50px;
   padding:0px 5px 5px 5px;
   margin: 0px;
 
@@ -30,7 +30,7 @@ body {
 
 #content-div {
   height: 100%;
-  width: calc(90% - 12px);
+  width: 338px;
   border: 1px solid gray;
   border-radius: 5px;
   position: relative;
