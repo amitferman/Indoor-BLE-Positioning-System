@@ -35,6 +35,7 @@ body {
   border-radius: 5px;
   position: relative;
   overflow: hidden;
+  transition-duration: 1s;
 }
 
 #content-title {
