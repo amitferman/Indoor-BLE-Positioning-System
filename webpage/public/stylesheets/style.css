@@ -37,6 +37,7 @@ html, body {
   background-color: white;
   opacity: 0.4;
   position: absolute;
+  margin: auto;
 }
 
 #content-title {
