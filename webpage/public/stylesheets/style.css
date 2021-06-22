@@ -11,6 +11,12 @@ body {
   font-weight:300;
 }
 
+#devices-container {
+  margin: auto;
+  height: 550px;
+  width: 500px;
+}
+
 #container {
   display: flex;
   flex-direction: row;
@@ -30,7 +36,7 @@ body {
 
 #content-div {
   height: 100%;
-  width: 340px;
+  width: 338px;
   border: 1px solid gray;
   border-radius: 5px;
   position: relative;
@@ -69,8 +75,8 @@ body {
 }
 
 #tile {
-  width: 50px;
-  height: 50px;
+  width: 52px;
+  height: 52px;
 }
 
 
