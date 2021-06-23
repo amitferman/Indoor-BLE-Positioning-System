@@ -57,8 +57,7 @@ app.get('/predicted-location', function(req, res, next) {
         "BLE_0": rssiVals[0],
         "BLE_1": rssiVals[1],
         "BLE_2": rssiVals[2],
-        "BLE_3": rssiVals[3],
-        "Column16": "example_value"
+        "BLE_3": rssiVals[3]
       }
     ]
   };
