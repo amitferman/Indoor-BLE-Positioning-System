@@ -31,7 +31,7 @@ int rssiReadings[1000];
 
 // Wifi configuration
 const char* ssid     = "Dlink";
-const char* password = "gomanltd";
+const char* password = "******* ****"; // replace with real password
 
 // Set web server port number to 80
 WiFiServer server(80);
