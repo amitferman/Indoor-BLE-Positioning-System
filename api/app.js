@@ -62,7 +62,7 @@ app.get('/predicted-location', function(req, res, next) {
       }
     ]
   };
-  fetch('http://c4585a85-96a8-4645-8b50-d557a27538df.centralus.azurecontainer.io/score', {
+  fetch('http://336db732-4020-4a73-9be0-acbed15d4e6f.centralus.azurecontainer.io/score', {
     method: 'POST', // or 'PUT'
     headers: {
       'Content-Type': 'application/json',
