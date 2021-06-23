@@ -25,5 +25,5 @@ In general, 78% of inferences will be correct according to the Accuracy. The dat
 For every class but "hallway", the model was quite accurate. The precision score for the hallway was 0.6969 - relatively low. The hallway borders several other rooms and is less defined, so it makes sense to have poor performance when the Tile is in the hallways.
 
 # References
-This project was inspired by [filipsPL](https://github.com/filipsPL)'s project [Cat-Localizer](https://github.com/filipsPL/cat-localizer) in terms of hardware used and the general idea, but is otherwise entirely my work and code.
+This project was inspired by Filips's project [Cat-Localizer](https://github.com/filipsPL/cat-localizer) in terms of hardware used and the general idea, but is otherwise entirely my work and code.
 , 
