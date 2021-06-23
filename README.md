@@ -4,7 +4,7 @@ Indoor positioning system using a network of 4 [ESP32](https://www.amazon.com/ES
 # Components
 - 4 ESP32 microcontrollers (supporting BLE) connected directly to outlets around home. They run /esp32/BLE-Scan/BLE-Scan.ino from Arduino IDE plus esp32/BLE-Scan/Utilities.cpp. They scan every half-minute for 10 seconds according to a real-time API so that they are roughly synchronized. In each BLE Scan, the ESP32 searches for the MAC address of the Tile and POSTs the Received Signal Strength Indicator (RSSI) to the REST API in /api folder. 
 - 1 Tile is used to advertise signal periodically. The Tile I used advertised via BLE about every 2 seconds. This required no configuration on my end.
-- REST API in /api folder accepts POST requests to update RSSI readings, accepts GET requests to get readings, and accepts GET request to query the Azure ML HTTP endpoint for the predicted location with the POSTed RSSI readings.
+- REST API (hosted on Azure) in /api folder accepts POST requests to update RSSI readings, accepts GET requests to get readings, and accepts GET request to query the Azure ML HTTP endpoint for the predicted location with the POSTed RSSI readings.
 - Azure Machine Learning to train model on remote cluster and deploy HTTP endpoint.
 - API logging webpage (not hosted) to gather data in /api-logging folder. Folder stores webpage code and CSV data files.
 - Webpage to display location (hosted on Azure) in /webpage
