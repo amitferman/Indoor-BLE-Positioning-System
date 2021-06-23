@@ -18,7 +18,7 @@ int numDevices; // devices found in scan
 int rssiReadings[1000]; // RSSI Readings, set length to 1000 to reserve enough memory
 // wifi config
 const char* WIFI_SSID = "Dlink";
-const char* WIFI_PASSWORD = "gomanltd";
+const char* WIFI_PASSWORD = "******** ****"; // replace with real password
 const char* BLE_NETWORK_API = "https://ble-network-api.azurewebsites.net/loc/3"; // endpoint ble-network-api
 const char* WORLD_TIME_API = "https://worldtimeapi.org/api/timezone/America/Vancouver.txt"; // endpoint worldtimeapi
 // declare BLE scan pointer
