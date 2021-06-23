@@ -26,4 +26,3 @@ For every class but "hallway", the model was quite accurate. The precision score
 
 # References
 This project was inspired by Filips's project [Cat-Localizer](https://github.com/filipsPL/cat-localizer) in terms of hardware used and the general idea, but is otherwise entirely my work and code.
-, 
